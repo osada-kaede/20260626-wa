@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>＜演習：スライダー＞</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+  <h1>スライダー</h1>
+
+  <div class="slider">
+    <button @click="previous">◀</button>
+
+    <div class="slide">
+      <img :src="slides[index]" alt="画像">
+    </div>
+
+    <button @click="next">▶</button>
+  </div>
+</div>
+  
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

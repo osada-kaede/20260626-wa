@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+button{
+    padding: 8px 16px;
+    margin-right: 4px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    background: #f5f5f5;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #eee;
+}
+
+.active{
+    background: #fff;
+    font-weight: bold;
+}
+
+p{
+    margin: 0;
+    padding: 16px;
+    border: 1px solid #ccc;
+}

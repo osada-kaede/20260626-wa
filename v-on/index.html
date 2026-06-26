@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>v-on: イベントの登録</title>
+</head>
+<body>
+    <h1>v-on: イベントの登録</h1>
+
+    <div id="app">
+        <!-- <button v-on:click="count++"> -->
+        <button @click="count++">
+            いいね ({{ count }})
+        </button>
+
+        <p>クリック回数:{{ count }}</p>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

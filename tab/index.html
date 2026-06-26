@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>＜演習：タブ切り替え＞</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>タブ切り替え</h1>
+
+        <button
+            @click="showTab('news')"
+            :class="{active:tab === 'news'}"
+        >
+            ニュース
+        </button>
+        <button
+            @click="showTab('sports')"
+            :class="{active:tab === 'sports'}"
+        >
+            スポーツ
+        </button>
+        <button
+            @click="showTab('weather')"
+            :class="{active:tab === 'weather'}"
+        >
+            天気
+        </button>
+
+        <p>{{ message }}</p>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="script.js"></script>
+</body>
+</body>
+</html>

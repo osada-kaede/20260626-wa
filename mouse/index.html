@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>＜演習：押している間だけ色が変わる（mousedown／mouseup）＞</title>
+</head>
+<body>
+    <div id="app">
+        <h1>＜演習：押している間だけ色が変わる（mousedown／mouseup）＞</h1>
+
+        <button
+            :style="{ backgroundColor:isPressed ? 'tomato':'' }"
+            @mousedown="isPressed = true"
+            @mouseup="isPressed = false"
+            @mouseleave="isPressed = false"
+        >
+            ボタン
+        </button>
+
+        <p>{{ isPressed ? "押しています" : "押していません" }}</p>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
